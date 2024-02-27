@@ -1,0 +1,24 @@
+# Create a dictionary called cities
+cities = {
+    'New York': {'Country': 'USA', 'Population': 8800000, 'Fact': "Broadway theater is staged in neon-lit Times Square."},
+    'Tokyo': {'Country': 'Japan', 'Population': 1400000, 'Fact': 'The Imperial Palace sits amid large public gardens.'},
+    'Beijing': {'Country': 'China', 'Population': 22000000, 'Fact': 'It’s known as much for modern architecture as its ancient sites such as the grand Forbidden City.'}}
+
+# Loop to print only the names of each city
+print("City Names:")
+for city in cities:
+    print(city)
+
+# Loop to print all information about each city
+print("\nCity Information:")
+for city, info in cities.items():
+    print(f"{city}:")
+    for key, value in info.items():
+        print(f"  {key}: {value}")
+
+# Loop to print all information in the dictionary
+print("\nAll Information:")
+for city, info in cities.items():
+    print(f"{city}:")
+    for key, value in info.items():
+        print(f"  {key}: {value}")
