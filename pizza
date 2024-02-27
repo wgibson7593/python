@@ -1,0 +1,34 @@
+# Toppings list 
+toppings = ["pepperoni", "pineapple", "cheese", "sausage", "olives", "anchovies", "mushrooms"]
+
+# Prices list
+prices = [2, 6, 1, 3, 2, 7, 2]
+
+# Toppings Variable 
+num_pizzas = len(toppings)
+
+print(f"We sell {num_pizzas} different kinds of pizza!")
+
+# combined lists
+pizzas = list(zip(prices, toppings))
+
+print(pizzas)
+
+# Sort pizzas
+pizzas.sort()
+
+# Get cheapest pizza offered 
+cheapest_pizza = pizzas[0]
+
+# Get the most expensive pizza 
+priciest_pizza = pizzas[-1]
+
+# Get 3 cheapest pizzas 
+three_cheapest = pizzas[:3]
+
+print(three_cheapest)
+
+# get $2 slices 
+num_two_dollar_slices = prices.count(2)
+
+print(f"Number of $2 slices: {num_two_dollar_slices}")
