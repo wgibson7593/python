@@ -1,0 +1,11 @@
+def convertHextoString(x):
+    # blank string to store digits
+    string = ""
+
+    for i in range(len(x)):
+        string +=chr(int(x[i], 16))
+    return string 
+    
+# List of digits
+x = ['74', '68', '61', '74', '73', '20', '6e', '6f', '20', '6f', '72', '64', '69', '6e', '61', '72', '79', '20', '72', '61', '62', '62', '69', '74']
+print(convertHextoString(x))
