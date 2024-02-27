@@ -1,0 +1,31 @@
+fileName = input("Enter the input file name: ")
+
+# storing words in the file 
+words = []
+
+uniqueWords = {}
+
+# Open file for reading 
+file1 = open(fileName, 'r')
+
+while True: 
+    # Get next line from file
+    line = file1.readline()
+    # If line is empty, end of file is reached 
+    if not line:
+        break 
+    # Append words into list 
+    else: 
+        for word in line.split():
+            words.append(word)
+
+file1.close()
+
+for word in words:
+    # If word is not found 
+    if word not in uniqueWords:
+        # Count words and store it as value
+        uniqueWords[word] = words.count(word)
+
+for i in sorted(uniqueWords.keys()):
+    print(i, uniqueWords[i])
